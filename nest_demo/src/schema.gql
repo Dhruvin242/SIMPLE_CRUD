@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Client {
+  id: String!
+  email: String!
+  name: String!
+}
+
+type Query {
+  getAllClients: [Client!]!
+  getSingle(id: String!): Client!
+}
+
+type Mutation {
+  createClient(name: String!, email: String!): Client!
+  updateClient(id: String!, name: String, email: String): Client!
+  deleteClient(id: String!): Client!
+}
